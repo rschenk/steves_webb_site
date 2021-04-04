@@ -36,7 +36,7 @@ paper.project.importSVG(url, function(item) {
   // See `orbit.svg` for that.
   orbitPath = importedSVG.children['orbitPath']
   
-  // Initialize webbDot to be a circle centered on webbPosition
+  // Initialize webbDot to be a circle centered on orbitPath at percentTravelled
   let curveOffset = orbitPath.length * percentTravelled
   let coordinates = orbitPath.getPointAt(curveOffset)
   webbDot = new paper.Path.Circle({
